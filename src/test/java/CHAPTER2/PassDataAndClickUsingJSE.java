@@ -19,7 +19,7 @@ public class PassDataAndClickUsingJSE {
 		WebElement searchTF = driver.findElement(By.id("twotabsearchtextbox"));
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("arguments[0].value=arguments[1]", searchTF,"headphones");
-		
+		//CHECKING ON IT
 		WebElement searchButton = driver.findElement(By.id("nav-search-submit-button"));
 		js.executeScript("arguments[0].click()", searchButton);
 		
